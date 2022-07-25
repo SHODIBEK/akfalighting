@@ -1,0 +1,218 @@
+extends pug/base
+
+append vars
+    - title = 'Карточка товара попап корзина'
+    - meta.description = 'Описание страницы'
+    - meta.viewport = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
+    - link.icon = './favicon.ico'
+    - meta.formatDetection = 'telephone=no'
+    - meta.themeColor = '#FFCC00'
+    - defaultLink = 'javascript:void(0);'
+    - body.classList = ['inner-page']
+
+block content
+    include pages/innerheader
+    .content
+        .navigation
+            .container
+                .crumbs
+                    <ul class="breadcrumbs">
+                        <li>
+                            <a href="/">Главная</a>
+                        </li>
+                        <li>
+                            <a href="/">Каталог продукции</a>
+                        </li>
+                        <li>
+                            <a href="/">Для дома и офиса</a>
+                        </li>
+                        <li>
+                            <span>AK-UFO 20W</span>
+                        </li>
+                    </ul>
+        .page-title
+            .container
+                h3
+                    | AK-UFO 20W
+        .header-article.container
+            | Артикул: # 123456789
+        .header-price.container
+            | Цена:&nbsp;<strike>11 500</strike>&nbsp;10 500 сум 
+        .category-card
+            .container
+                .category-card-wrapper
+                    .category_filter-wrap
+                        .category-card-filter
+                            .category-card-nav.category-filter-nav.open.dotted
+                                .category-filter-nav__title
+                                    | Для дома и офиса
+                                ul
+                                    li
+                                        a(href="#")
+                                            | Все товары
+                                    li.active
+                                        a(href="#")
+                                            | Led лампы в форме капли
+                                    li
+                                        a(href="#")
+                                            | Led лампы в форме галогеновых ламп
+                                    li
+                                        a(href="#")
+                                            | Led лампы в форме свечи
+                                    li
+                                        a(href="#")
+                                            | Led панели
+                                    li
+                                        a(href="#")
+                                            | Led панели накладные
+                                    li
+                                        a(href="#")
+                                            | LED Светильник в форме Трубы
+                            .category-card-nav.category-filter-nav
+                                .category-filter-nav__title
+                                    | Промышленное освещение
+                                ul
+                                    li
+                                        a(href="#")
+                                            | Все товары
+                                    li.active
+                                        a(href="#")
+                                            | Led лампы в форме капли
+                                    li
+                                        a(href="#")
+                                            | Led лампы в форме галогеновых ламп
+                                    li
+                                        a(href="#")
+                                            | Led лампы в форме свечи
+                                    li
+                                        a(href="#")
+                                            | Led панели
+                                    li
+                                        a(href="#")
+                                            | Led панели накладные
+                                    li
+                                        a(href="#")
+                                            | LED Светильник в форме Трубы
+                            .category-card-nav.category-filter-nav
+                                .category-filter-nav__title
+                                    | Уличное освещение
+                                ul
+                                    li
+                                        a(href="#")
+                                            | Все товары
+                                    li.active
+                                        a(href="#")
+                                            | Led лампы в форме капли
+                                    li
+                                        a(href="#")
+                                            | Led лампы в форме галогеновых ламп
+                                    li
+                                        a(href="#")
+                                            | Led лампы в форме свечи
+                                    li
+                                        a(href="#")
+                                            | Led панели
+                                    li
+                                        a(href="#")
+                                            | Led панели накладные
+                                    li
+                                        a(href="#")
+                                            | LED Светильник в форме Трубы
+                            a(href="#").category-card-nav.category-filter-nav
+                                .category-filter-nav__title
+                                    | Стабилизаторы напряжения
+                    .category-card-img
+                        .img(style="background-image: url(images/product2.jpg);" src="images/product.jpg" data-zoom-image="images/product2.jpg")
+                        .block-item__btn
+                            button(type="button").btn
+                                | Заказать
+                            button(type="button").btn.btn-card
+                                | Корзина
+            .category-card-info
+                .container
+                    .category-card-info-wrapper
+                        .category-card-info-angle
+                            .category-card-info-angle__title
+                                | Угол освещенности
+                            .category-card-info-angle__img
+                                img(src="images/icons/angle.svg")
+                                span 160 <sup>0</sup>
+                        .category-card-info-char
+                            .category-card-info-char__title
+                                | Характеристики
+                            .category-card-info-char__info
+                                dl
+                                    dt Напряжение
+                                    dd 120-250 V
+                                dl
+                                    dt Сила тока
+                                    dd 0,13-0,14 А
+                                dl
+                                    dt Частота
+                                    dd 50-60 Hz
+                                dl
+                                    dt Световой поток
+                                    dd 2100-2700 Lm
+                                dl
+                                    dt Эффективность
+                                    dd 70-90 Lm/W
+                                dl
+                                    dt Цветовая температура
+                                    dd 6500 K
+                                dl
+                                    dt Индекс цветопередачи
+                                    dd 80 Ra
+                                dl
+                                    dt Номинальная мощность
+                                    dd 30 W
+                                dl
+                                    dt Габариты
+                                    dd 180 мм, выс. 55 мм
+                            .category-card-info-char__title
+                                | Полезные материалы
+                            .category-card-info-char__doc
+                                dl
+                                    dt Название документа
+                                    dd
+                                        span.pdf
+                                        a(href="#") Скачать
+                                dl
+                                    dt Название документа
+                                    dd
+                                        span.pdf
+                                        a(href="#") Скачать
+                                dl
+                                    dt Название документа
+                                    dd
+                                        span.pdf
+                                        a(href="#") Скачать
+    include pages/footer
+    .modal
+        .modal-wrapper
+            span.close
+            .modal-form
+                .modal-title
+                    | AK-UFO 20W
+                form(action="/" method="POST")
+                    .modal-block
+                        .modal-count
+                            span
+                                | Колличество:
+                            .counter
+                                button(type="button").minus
+                                input(type="number" value="15").item-count
+                                button(type="button").plus
+                        .input-group
+                            input(type="text" name="name" placeholder="ФИО")
+                        hr
+                        .input-group
+                            input(type="tel" name="number" placeholder="Номер телефна")
+                        .modal-block-count
+                            p
+                                | Стоимость заказа: <span>12&nbsp;000&nbsp;542&nbsp;сум</span>
+                            span
+                                | Стоимость доставки расчитывается отдельно
+                        .modal-block-btn
+                            button(type="submit")
+                                | Оформить заказ 
+    //- include js/vendor/price.js

@@ -1,0 +1,324 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.page-content
+		include pages/header
+		.slider-content
+			.container
+				.slick-slider
+					span.slick-slider-title
+						| Энергосберегающие лампы
+						span
+							| нового поколения
+					.slick-slide-js.owl-carousel
+						.content-slide(data="0"  data-section="Для дома и офиса" dots-data="0")
+							.image(style="background-image:url(images/slider-1.jpg)")
+							.content-title
+								p Для дома и офиса
+							.content-subtitle
+								p Наши лампы прошли лабораторные испытания и соответствуют нормам фотобиологической безопасности, а значит, не нанесут вреда для глаз и сделают освещение комфортным
+							.content-images(style="background-image:url(images/lamp.png)")
+						.content-slide(data="1" dots-data="0" data-section="Промышленное освещение")
+							.image(style="background-image:url(images/slider-2.jpg)")
+							.content-title
+								p Промышленное освещение
+							.content-subtitle
+								p Освещение промышленных объектов требует большого количества электроэнергии. Перейдите на светодиодные решения и существенно сократите издержки благодаря энергоэффективности светильников и длительному сроку службы.
+							.content-images(style="background-image:url(images/lamp2.png)")
+						.content-slide(data="2" data-section="Уличное освещение" dots-data="0")
+							.image(style="background-image:url(images/slider-3.jpg)")
+							.content-title
+								p Уличное освещение
+							.content-subtitle
+								p Сетевые системы освещения позволяют легко оптимизировать дорожное и уличное освещение для комфортного проживания в городе, а также достичь важных целей устойчивого развития и сокращения энергопотребления.
+							.content-images(style="background-image:url(images/lamp3.png)")
+					<div class="slider-nav js-main-slider-nav">
+						<span class="big_line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="big_line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="big_line"></span>
+						<span class="line"></span>
+						<button class="nav-item" data="0" dots-data="0">
+							<div class="item-title">Промышленное освещение</div>
+						</button>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="big_line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="big_line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="big_line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="big_line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="big_line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="big_line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<button class="nav-item active" data="1" dots-data="1">
+							<div class="item-title">Для дома и офиса</div>
+						</button>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="big_line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="big_line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="big_line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="big_line"></span>
+						<span class="line" ></span>
+						<span class="line" ></span>
+						<span class="line" ></span>
+						<span class="big_line" ></span>
+						<span class="line" ></span>
+						<span class="line" ></span>
+						<span class="line" ></span>
+						<span class="big_line" ></span>
+						<span class="line" ></span>
+						<span class="line" ></span>
+						<span class="line" ></span>
+						<button class="nav-item" data="2" dots-data="2">
+							<div class="item-title">Уличное освещение</div>
+						</button>
+						<span class="line" ></span>
+						<span class="line" ></span>
+						<span class="line" ></span>
+						<span class="line" ></span>
+						<span class="big_line" ></span>
+						<span class="line" ></span>
+						<span class="line" ></span>
+						<span class="line" ></span>
+						<span class="big_line" ></span>
+						<span class="line" ></span>
+						<span class="line" ></span>
+						<span class="line" ></span>
+						<span class="big_line" ></span>
+						<span class="line" ></span>
+						<span class="line" ></span>
+						<span class="line" ></span>
+						<span class="big_line" ></span>
+						<span class="line" ></span>
+						<span class="line" ></span>
+						<span class="line" ></span>
+						<span class="big_line" ></span>
+						<span class="line" ></span>
+						<span class="line" ></span>
+						<span class="line" ></span>
+						<span class="big_line" ></span>
+						<span class="line" ></span>
+						<span class="line" ></span>
+						<span class="line" ></span>
+						<span class="big_line" ></span>
+						<span class="line" ></span>
+						<span class="line" ></span>
+						<span class="line" ></span>
+						<span class="big_line" ></span>
+						</div>
+					</div>
+		section.product
+			.container
+				.product-items
+					.product-item.catalog-item
+						.catalog-item-wrapper
+							.product-item-catalog
+								.product-item-catalog__title
+									h1 продукция
+								.product-item-catalog__subtitle
+									span AKFA Lighting
+								.product-item-catalog__download
+									span.pdf
+									.product-item-catalog__download__link
+										a(href="#") Скачать
+										h5 каталог продукции
+						a(href="#").product-item-block.large-block
+							.product-item-flex
+								.product-item-block__link
+									.link-active Перейти
+								.product-item-block__text
+									p Для дома и офиса
+									span LED лампы, LED панели и подвесные LED светильники
+							.product-item-block__img
+								span(style="background-image: url(images/lamp4.png);" role="1")
+					.product-item
+						a(href="#").product-item-block
+							.product-item-block__link
+								.link-active Перейти
+							.product-item-block__text
+								p Промышленное освещение
+								span LED светильники, Led прожекторы и led лампы
+							.product-item-block__img
+								span(style="background-image: url(images/lamp6.png);" role="2")
+						a(href="#").product-item-block
+							.product-item-block__link
+								.link-active Перейти
+							.product-item-block__text
+								p Уличное освещение
+								span LED фонари, led светильники и led прожекторы
+							.product-item-block__img
+								span(style="background-image: url(images/lamp5.png);" role='3')
+						a(href="#").product-item-block
+							.product-item-block__link
+								.link-active Перейти
+							.product-item-block__text.pb25
+								p Стабилизаторы напряжения
+							.product-item-block__img
+								span(style="background-image: url(images/lamp7.png);" role='4')
+		section.about-product
+			.container
+				.about-product-items.about-catalog-item
+					.about-product-item(role="order 0")
+						.about-product-item__img(style='background-image: url(images/icons/economic.svg);')
+						.about-product-item__title Экономия бюджета
+						.about-product-item__subtitle Наполняя этот блок информацией, необходимо отталкиваться от потенциальных покупателей, их желаний и потребностей.
+					.about-product-item(role="order 2")
+						.about-product-item__img(style='background-image: url(images/icons/security.svg);')
+						.about-product-item__title Безопасность для глаз
+						.about-product-item__subtitle Наполняя этот блок информацией, необходимо отталкиваться от потенциальных покупателей, их желаний и потребностей.
+					.about-product-catalog-wrap(role="order 1")
+						.about-product-catalog
+								.about-product-catalog__title
+									h1 О ПРОДУКТЕ
+								.about-product-catalog__subtitle
+									span AKFA Lighting
+								.about-product-catalog__download
+									span.pdf
+									.about-product-catalog__download__link
+										a(href="#") Скачать
+										h5 Условия гарантии
+					.about-product-item(role="order 3")
+						.about-product-item__img(style='background-image: url(images/icons/quality.svg);')
+						.about-product-item__title Качество в деталях
+						.about-product-item__subtitle Наполняя этот блок информацией, необходимо отталкиваться от потенциальных покупателей, их желаний и потребностей.
+					.about-product-item(role="order 4")
+						.about-product-item__img(style='background-image: url(images/icons/product.svg);')
+						.about-product-item__title Экологически чистый продукт
+						.about-product-item__subtitle Наполняя этот блок информацией, необходимо отталкиваться от потенциальных покупателей, их желаний и потребностей.
+					.about-product-item(role="order 5")
+						.about-product-item__img(style='background-image: url(images/icons/guarantee.svg);')
+						.about-product-item__title Гарантия и замена продукта
+						.about-product-item__subtitle Наполняя этот блок информацией, необходимо отталкиваться от потенциальных покупателей, их желаний и потребностей.
+		section.quality
+			.quality-bg
+			.container
+				.quality_title КАЧЕСТВО в деталях
+				.quality-top
+					.quality-top-item
+						span 1
+						.quality-top-item__text
+							h4 Матовый рассеиватель
+							p Комфортный мягкий свет
+					.quality-top-item
+						span 2
+						.quality-top-item__text
+							h4 Планарные светодиоды
+							p Высокая точность и эффективность
+					.quality-top-item
+						span 3
+						.quality-top-item__text
+							h4 Надежный интеллектуальный драйвер
+							p Отсутствие пульсации, стабильная работа
+				.quality-led#lamp-bg
+					.quality-nav
+						span(role="1").bounce 1
+						span(role="2").bounce 2
+						span(role="3").bounce 3
+						span(role="4").bounce 4
+						span(role="5").bounce 5
+						span(role="6").bounce 6
+				.quality-bottom
+					.quality-bottom-item
+						span 4
+						.quality-bottom-item__text
+							h4 Металлический радиатор
+							p Увеличение надежности и срока службы
+					.quality-bottom-item
+						span 5
+						.quality-bottom-item__text
+							h4 Цилиндрический радиатор
+							p Увеличение надежности и срока службы
+					.quality-bottom-item
+						span 6
+						.quality-bottom-item__text
+							h4 Цоколь - латунь с никелевым покрытием
+							p Надежный контакт с партроном
+				.quality-text
+					.quality-text-hiden
+						span.swipe
+						.quality-text__wrapper
+							.quality-text__title Нажмите
+							.quality-text__subtitle на лампу
+		section.video-section
+			.container
+				.video-section-items
+					.video-section-item
+						.video-section-item__wrapper
+							.dotted
+								.video-section-item__title «AKFA Lighting»
+								.video-section-item__subtitle - это первое предприятие в Центральной Азии по производству импортозпмещающих энергозамещающих ламп
+								.video-section-item__link
+									a(href="#").btn
+										| О компании
+							.video-section-item__text 2-х минутное видео о любви и лояльности к своим клиентам
+						.video-section-item__video
+							.video-section-items
+								<a data-fancybox="video" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+										.imgvideo(style="background-image: url('images/video.jpg');")
+								</a>
+					.video-section-item__bottomtitle 2010-й год для группы компаний «AKFA» стал годом основания завода по производству энергосберегающих ламп «AKFA Lighting». Решение о создании производства было принято с целью в полной мере удовлетворить потребительский спрос населения в долговечных и надежных источниках света.
+		section.news
+			.container
+				.news-items
+					.news-items-block.owl-carousel
+						a(href="#").news-items-block-slider
+							.news-items-block-slider__image(style="background-image: url('images/news/1.jpg');")
+							.news-items-block-slider__info
+								span.news-items-block-slider__info__date 30.09.2018
+								span.news-items-block-slider__info__title Чтобы коммуникация была эффективной, ваши идеи должны быть яркими и креативными, а контент - актуальным.
+								span.news-items-block-slider__info__text Иначе он утрачивает свою привлекательность для читателя. Текст необходимо составлять живой,
+						a(href="#").news-items-block-slider
+							.news-items-block-slider__image(style="background-image: url('images/news/1.jpg');")
+							.news-items-block-slider__info
+								span.news-items-block-slider__info__date 30.09.2018
+								span.news-items-block-slider__info__title Чтобы коммуникация была эффективной, ваши идеи должны быть яркими и креативными, а контент - актуальным.
+								span.news-items-block-slider__info__text Иначе он утрачивает свою привлекательность для читателя. Текст необходимо составлять живой,
+						a(href="#").news-items-block-slider
+							.news-items-block-slider__image(style="background-image: url('images/news/1.jpg');")
+							.news-items-block-slider__info
+								span.news-items-block-slider__info__date 30.09.2018
+								span.news-items-block-slider__info__title Чтобы коммуникация была эффективной, ваши идеи должны быть яркими и креативными, а контент - актуальным.
+								span.news-items-block-slider__info__text Иначе он утрачивает свою привлекательность для читателя. Текст необходимо составлять живой,
+					.news-items-dotted.dotted
+						.news-items-dotted__title НОВОСТИ
+						.news-items-dotted__subtitle AKFA Lighting
+		include pages/footer

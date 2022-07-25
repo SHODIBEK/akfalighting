@@ -1,0 +1,105 @@
+.home {
+    display: inline-block;
+    @include home($color-white);
+}
+.home_mobile {
+	display: inline-block;
+	@include home_mobile($color-orange);
+}
+.arrow_dwn {
+    display: inline-block;
+    @include arrow_dwn($color-white);
+}
+.arrRight {
+    display: inline-block;
+    @include arrRight($color-black);
+    transition: all .4s ease-in;
+    &:hover {
+        @include arrRight($color-orange);
+        transition: all .4s ease-in;
+    }
+}
+.arrMobile {
+	display: inline-block;
+	@include arrRight($color-orange);
+}
+.rus {
+    display: inline-block;
+    @include rus($color-white);
+}
+
+.uzb {
+    display: inline-block;
+    @include uzb($color-white);
+}
+
+.eng {
+    display: inline-block;
+    @include eng($color-white);
+}
+
+.pdf {
+    display: inline-block;
+    @include pdf($color-black);
+}
+
+.swipe {
+    display: inline-block;
+	background-size: cover;
+    @include swipe($color-black);
+}
+
+.swipe_table {
+	display: inline-block;
+	@include swipe_table ($color-orange);
+}
+
+.bounce {
+    display: inline-block;
+    @include bounce($color-white);
+}
+
+.search {
+    @include search($color-black);
+}
+.focused .search {
+    @include search($color-white);
+}
+.phone {
+    @include phone($color-black);
+}
+
+.mail {
+    @include mail($color-black);
+}
+
+.tg {
+    @include tg($color-black);
+}
+
+.fb {
+    @include fb($color-black);
+}
+.lucem {
+    @include lucem($color-black);
+}
+.placeholder {
+    @include placeholder($color-black);
+}
+.doc {
+    display: inline-block;
+    @include doc($color-black);
+}
+.check {
+    @include check($color-orange);
+}
+
+.gamburger {
+	@include gamburger($color-orange);
+}
+
+.close {
+	background-size: 9px;
+	@include close($color-orange);
+}
+

@@ -1,0 +1,97 @@
+.search-content {
+	padding-bottom: 99px;
+	&-resault {
+		font-size: 17px;
+		line-height: 24px;
+		color: $grey;
+		padding-bottom: 23px;
+	}
+	&-input {
+		position: relative;
+		padding-bottom: 46px;
+		input {
+			width: 100%;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 10px;
+			outline: none;
+			border: 1px solid white;
+			border-radius: 5px;
+			box-shadow: 0px 10px 20px 0px rgba(127, 126, 126, 0.15);
+			box-sizing: border-box;
+			transition: all .3s ease-in-out;
+		}
+		label {
+			position: absolute;
+			top: 3px;
+			left: 10px;
+			color: #858585;
+			font-size: 15px;
+			line-height: 22px;
+			transition: all .3s ease-in-out;
+		}
+		button {
+			position: absolute;
+			top: 8px;
+			right: 10px;
+			width: 12px;
+			height: 12px;
+			-moz-background-size: 12px;
+			border: none;
+			background-color: transparent;
+		}
+	}
+	&-item {
+		padding-bottom: 38px;
+		&__title {
+			font-family: $PFDinTextCompPro-Medium;
+			font-size: 18px;
+			line-height: 25px;
+			padding-bottom: 17px;
+		}
+		&__subtitle {
+			font-size: 17px;
+			line-height: 24px;
+			color: $grey;
+			margin-bottom: 19px;
+		}
+		&__link {
+			a {
+				font-size: 17px;
+				line-height: 24px;
+				color: $color-orange;
+				text-decoration: underline;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	#pagination {
+		padding-top: 5px;
+	}
+}
+@media (max-width: 960px) {
+	.search-content-item__subtitle {
+		max-height: 50px;
+		-o-text-overflow: ellipsis;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		margin-bottom: 17px;
+	}
+}
+
+@media (max-width: 767px) {
+	.search-content-item__title {
+		font-size: 16px;
+		line-height: 21px;
+		padding-bottom: 20px;
+	}
+	.search-content-item__subtitle {
+		margin-bottom: 21px;
+		-webkit-line-clamp: 2;
+	}
+}

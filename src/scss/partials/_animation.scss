@@ -1,0 +1,16 @@
+@keyframes slidedown {
+	0%, 100%, {
+		transform: translateY(0px);
+	}
+	50% {
+	    transform: translateY(5px);
+	}
+}
+@keyframes click {
+	0%, 100%, {
+		transform: scale(1);
+	}
+	50% {
+	    transform: scale(0.75);
+	}
+}

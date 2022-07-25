@@ -1,0 +1,50 @@
+extends pug/base
+
+append vars
+	- body.classList = ['lucem'];
+block content
+	include pages/innerheader
+	.content
+		.navigation
+			.container
+				.crumbs
+					<ul class="breadcrumbs">
+					<li>
+						<a href="/">Главная</a>
+					</li>
+					<li>
+						<span>Lucem</span>
+					</li>
+					</ul>
+		.page-title
+			.container
+				h3
+					| Lucem
+		.lucem-content
+			.container
+				.lucem-content-wrap
+					.lucem-content-nav.open.dotted
+						a(href="#").lucem-content-nav__title
+							| Led лампы
+						a(href="#").lucem-content-nav__title
+							| Аккумуляторные led лампы
+						a(href="#").lucem-content-nav__title
+							| Led панели
+						a(href="#").lucem-content-nav__title
+							| Накладные led панели
+					.lucem-content-info
+						.default-page
+							img(src="images/lucem.jpg")
+							h3
+								| LED лампы
+							p
+								| Светодиодные лампы Lucem излучают холодный белый свет, который приятен для восприятия глаз и приближен к солнечному свету.
+							p
+								| Помещение, заполненное светом светодоидных лапм, отличается исключительным комфортом и создает уютную атмосферу.
+							h3
+								| Аккумулляторыные LED лампы
+							p
+								| Энергосберегающие аккумуляторные лампы Lucem работают даже без электричества. Специальный аккумулятор позволяет продукту Lucem работать до 3,5 часов без электроэнергии.
+							p
+								| Такие лампы можно использовать и как переносные светильники. Например, аккумуляторные лампы номинальной мощностью в9 ватт сопоставими с яркостью обычной лампы накаливания номинальной мощностью 60 ватт.
+	include pages/footer

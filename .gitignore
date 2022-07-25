@@ -1,0 +1,11 @@
+.idea/
+bower_components/
+build/
+node_modules/
+zip/
+src/images
+src/resources
+.DS_Store
+aero-debug.log
+aero-deploy.tar.gz
+package-lock.json

@@ -1,0 +1,238 @@
+extends pug/base
+
+append vars
+
+block content
+	include pages/innerheader
+	.content
+		.navigation
+			.container
+				.crumbs
+					<ul class="breadcrumbs">
+					<li>
+					<a href="/">Главная</a>
+					</li>
+					<li>
+					<a href="/">Каталог продукции</a>
+					</li>
+					<li>
+					<span>Для дома и офиса</span>
+					</li>
+					</ul>
+		.page-title
+			.container
+				h3
+					| Для дома и офиса
+		.category
+			.container
+				.category-wrap
+					.category_filter-wrap
+						.category-filter.dotted
+							.category-filter-nav.open
+								.category-filter-nav__title
+									| Для дома и офиса
+								ul
+									li
+										a(href="#")
+											| Все товары
+									li.active
+										a(href="#")
+											| Led лампы в форме капли
+									li
+										a(href="#")
+											| Led лампы в форме галогеновых ламп
+									li
+										a(href="#")
+											| Led лампы в форме свечи
+									li
+										a(href="#")
+											| Led панели
+									li
+										a(href="#")
+											| Led панели накладные
+									li
+										a(href="#")
+											| LED Светильник в форме Трубы
+							.category-filter-nav
+								.category-filter-nav__title
+									| Промышленное освещение
+								ul
+									li
+										a(href="#")
+											| Все товары
+									li
+										a(href="#")
+											| Led лампы в форме капли
+									li
+										a(href="#")
+											| Led лампы в форме галогеновых ламп
+									li
+										a(href="#")
+											| Led лампы в форме свечи
+									li
+										a(href="#")
+											| Led панели
+									li
+										a(href="#")
+											| Led панели накладные
+									li
+										a(href="#")
+											| LED Светильник в форме Трубы
+							.category-filter-nav
+								.category-filter-nav__title
+									| Уличное освещение
+								ul
+									li
+										a(href="#")
+											| Все товары
+									li
+										a(href="#")
+											| Led лампы в форме капли
+									li
+										a(href="#")
+											| Led лампы в форме галогеновых ламп
+									li
+										a(href="#")
+											| Led лампы в форме свечи
+									li
+										a(href="#")
+											| Led панели
+									li
+										a(href="#")
+											| Led панели накладные
+									li
+										a(href="#")
+											| LED Светильник в форме Трубы
+							a(href="#").category-filter-nav
+								.category-filter-nav__title
+									| Стабилизаторы напряжения
+							.category-filter-check
+								.category-filter-check__title
+									| Мощность
+								.category-filter-check__items
+									dl
+										dt
+											label(for="3w")
+												input(type="checkbox")#3w
+												p 3 W
+												span
+										dd
+											label(for="5w")
+												input(type="checkbox")#5w
+												p 5 W
+												span
+									dl
+										dt
+											label(for="7w")
+												input(type="checkbox")#7w
+												p 7 W
+												span
+										dd
+											label(for="10w")
+												input(type="checkbox")#10w
+												p 10 W
+												span
+									dl
+										dt
+											label(for="12w")
+												input(type="checkbox")#12w
+												p 12 W
+												span
+										dd
+											label(for="16w")
+												input(type="checkbox")#16w
+												p 16 W
+												span
+									dl
+										dt
+											label(for="18w")
+												input(type="checkbox")#18w
+												p 18 W
+												span
+							.category-filter-check
+								.category-filter-check__title.temp_title
+									| Цветовая температура
+								.category-filter-check__items
+									dl
+										dt
+											label(for="3k")
+												input(type="checkbox")#3k
+												p 3000 K
+												span
+										dd
+											label(for="6500k")
+												input(type="checkbox")#6500k
+												p 6500 K
+												span
+									dl
+										dt
+											label(for="7k")
+												input(type="checkbox")#7k
+												p 7000 K
+												span
+					.category-items
+						a(href="#").category-item
+							.category-item__img(style="background-image: url('images/product.jpg');")
+							.category-item__name
+								|	AK-UFO 20W
+						a(href="#").category-item
+							.category-item__img(style="background-image: url('images/product.jpg');")
+							.category-item__name
+								|   AK-UFO 30W
+						a(href="#").category-item
+							.category-item__img(style="background-image: url('images/product.jpg');")
+							.category-item__name
+								|   AK-UFO 40W
+						a(href="#").category-item
+							.category-item__img(style="background-image: url('images/product.jpg');")
+							.category-item__name
+								|   AK-UFO 20W
+						a(href="#").category-item
+							.category-item__img(style="background-image: url('images/product.jpg');")
+							.category-item__name
+								|    AK-UFO 20W
+						a(href="#").category-item
+							.category-item__img(style="background-image: url('images/product.jpg');")
+							.category-item__name
+								|   AK-UFO 20W
+						a(href="#").category-item
+							.category-item__img(style="background-image: url('images/product.jpg');")
+							.category-item__name
+								|   AK-UFO 20W
+						a(href="#").category-item.mobile_hidden
+							.category-item__img(style="background-image: url('images/product.jpg');")
+							.category-item__name
+								|   AK-UFO 20W
+						a(href="#").category-item.mobile_hidden
+							.category-item__img(style="background-image: url('images/product.jpg');")
+							.category-item__name
+								|   AK-UFO 20W
+						a(href="#").category-item.mobile_hidden
+							.category-item__img(style="background-image: url('images/product.jpg');")
+							.category-item__name
+								|   AK-UFO 20W
+				#pagination
+					<ul class="pagination">
+						<li>
+							<a href="">Предыдущая</a>
+						</li>
+						<li>
+							<a href="">1</a>
+						</li>
+						<li class="active">
+							<a href="">2</a>
+						</li>
+						<li>
+							<a href="">3</a>
+						</li>
+						<li class="dots">
+							<a href=""></a>
+						</li>
+						<li>
+							<a href="">10</a>
+						</li>
+						<li>
+							<a href="">Следующая</a>
+						</li>
+					</ul>
+	include pages/footer

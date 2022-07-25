@@ -1,0 +1,66 @@
+extends pug/base
+
+append vars
+
+block content
+	include pages/innerheader
+	.content
+		.navigation
+			.container
+				.crumbs
+					<ul class="breadcrumbs">
+						<li>
+							<a href="/">Главная</a>
+						</li>
+						<li>
+							<a href="/">Новости</a>
+						</li>
+						<li>
+							<span>Заголовок новости</span>
+						</li>
+					</ul>
+		.page-title
+			.container
+				h3
+					| Заголовок новости
+		.news-card
+			.container
+				.news-card-read.clearfix
+					.news-card-read-img(style="background-image: url('images/project-img.jpg');")
+					.news-card-read-wrapper
+						.news-card-read-date.dotted
+								| 30.09.2018
+					.news-card-read-info__title
+						p
+							| Эта страница является новостным блогом и должна быть наполнена интересным контентом. Наполняя этот блок информацией, необходимо отталкиваться от потенциальных покупателей, их желаний и потребностей. Расскажите вкратце об истории и деятельности Вашей компании, или интересные статьи из сферы вашей деятельности. Подготовьте или переведите интересный документ или электронную книгу, разместите небольшой фрагмент на вашем блоге и предоставьте пользователям возможность скачать полную версию.
+						p
+							| Есть много способов распространять контент в интернете: сообщения в блогах, посты в Twitter, записи на «стене» в Facebook и других социальных сетях. Но чтобы коммуникация была эффективной, ваши идеи должны быть яркими и креативными, а контент - актуальным, интересным, информативным. Иначе он утрачивает свою привлекательность для читателя. Текст необходимо составлять живой, чтобы посетитель читал его быстро и легко, заинтересовываясь с каждой строчкой. Не стоит перегружать текст специальными терминами или писать объемный материал.
+			.news-card-other
+				.container
+					.news-card-other__tittle
+						| Другие новости
+					.news-card-other__items
+						.news-card-other__item
+							a(href="#")
+								.news-card-other__item__img(style="background-image: url('images/bigplaceholder.jpg');")
+								.news-card-other__item__date
+									| 30.09.2018
+								.news-card-other__item__text
+									| Чтобы коммуникация была эффективной, ваши идеи должны быть яркими и креативными, а контент - актуальным.
+						.news-card-other__item
+							a(href="#")
+								.news-card-other__item__img(style="background-image: url('images/bigplaceholder.jpg');")
+								.news-card-other__item__date
+									| 30.09.2018
+								.news-card-other__item__text
+									| Ваши идеи должны быть яркими
+						.news-card-other__item
+							a(href="#")
+								.news-card-other__item__img(style="background-image: url('images/bigplaceholder.jpg');")
+								.news-card-other__item__date
+									| 30.09.2018
+								.news-card-other__item__text
+									| Чтобы коммуникация была эффективной, ваши идеи должны быть яркими и креативными
+					.news-btn
+						a(href="#").backBtn Назад
+	include pages/footer

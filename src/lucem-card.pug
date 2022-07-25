@@ -1,0 +1,102 @@
+extends pug/base
+
+append vars
+	- body.classList = ['lucem'];
+block content
+	include pages/innerheader
+	.content
+		.navigation
+			.container
+				.crumbs
+					<ul class="breadcrumbs">
+					<li>
+					<a href="/">Главная</a>
+					</li>
+					<li>
+					<a href="/">Lucem</a>
+					</li>
+					<li>
+					<a href="/">Led лампы</a>
+					</li>
+					<li>
+					<span>AK-UFO 20W</span>
+					</li>
+					</ul>
+		.page-title
+			.container
+				h3
+					| AK-UFO 20W
+		.lucem-card
+			.container
+				.category-card
+					.category-card-wrapper
+						.lucem-content-nav.open.dotted
+							a(href="#").lucem-content-nav__title
+								| Led лампы
+							a(href="#").lucem-content-nav__title
+								| Аккумуляторные led лампы
+							a(href="#").lucem-content-nav__title
+								| Led панели
+							a(href="#").lucem-content-nav__title
+								| Накладные led панели
+						.category-card-img
+							.img(style="background-image: url(images/product2.jpg);" src="images/product.jpg" data-zoom-image="images/product2.jpg")
+			.category-card-info
+				.container
+					.category-card-info-wrapper
+						.category-card-info-angle
+							.category-card-info-angle__title
+								| Угол освещенности
+							.category-card-info-angle__img
+								img(src="images/icons/lucemAngle.svg")
+								span 160 <sup>0</sup>
+						.category-card-info-char
+							.category-card-info-char__title
+								| Характеристики
+							.category-card-info-char__info
+								dl
+									dt Напряжение
+									dd 120-250 V
+								dl
+									dt Сила тока
+									dd 0,13-0,14 А
+								dl
+									dt Частота
+									dd 50-60 Hz
+								dl
+									dt Световой поток
+									dd 2100-2700 Lm
+								dl
+									dt Эффективность
+									dd 70-90 Lm/W
+								dl
+									dt Цветовая температура
+									dd 6500 K
+								dl
+									dt Индекс цветопередачи
+									dd 80 Ra
+								dl
+									dt Номинальная мощность
+									dd 30 W
+								dl
+									dt Габариты
+									dd 180 мм, выс. 55 мм
+							.category-card-info-char__title
+								| Полезные материалы
+							.category-card-info-char__doc
+								dl
+									dt Название документа
+									dd
+										span.pdf
+										a(href="#") Скачать
+								dl
+									dt Название документа
+									dd
+										span.pdf
+										a(href="#") Скачать
+								dl
+									dt Название документа
+									dd
+										span.pdf
+										a(href="#") Скачать
+		include pages/footer

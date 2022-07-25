@@ -1,0 +1,119 @@
+extends pug/base
+
+append vars
+	- body.classList = ['header-bg-hidden'];
+
+block content
+	include pages/innerheader
+	.content
+		.navigation
+			.container
+				.crumbs
+					<ul class="breadcrumbs">
+						<li>
+							<a href="/">Главная</a>
+						</li>
+						<li>
+							<span>Проектное освещение</span>
+						</li>
+					</ul>
+		.page-title
+			.container
+				h3
+					| Проектное освещение
+		.design-lighting
+			.design-lighting-bg(style="background-image: url(images/background.jpg);")
+				.container
+					.design-lighting-bg__text
+						span(role='Ландшафтное освещение')
+							| Ландшафтное освещение
+					.design-lighting-bg__text
+						span(role='Фасадное освещение')
+							| Фасадное освещение
+					.design-lighting-bg__text
+						span(role='Уличное освещение')
+							| Уличное освещение
+			.container
+				.design-lighting-seo
+					.design-lighting-seo__tittle
+						| SEO текст. Заголовок H5.
+					.design-lighting-seo__subtitle
+						p
+							| Эта страница является самой первой и главной точкой посетителя сайта, и, поэтому важно заполнить ее наиболее качественной и интересной информацией, ведь именно прочитав ее, посетитель решит – оставаться на сайте или искать необходимую информацию в другом месте. Наполняя этот блок информацией, необходимо отталкиваться от потенциальных покупателей, их желаний и потребностей. Расскажите вкратце об истории и деятельности Вашей компании, укажите ваши плюсы и отличия от конкурентов.
+						p
+							| Распишите о разделах сайта, укажите, где и что находиться, что можно найти в фотогалерее, каталоге продукции. Текст необходимо составлять живой, чтобы посетитель читал его быстро и легко, заинтересовываясь с каждой строчкой. Не стоит перегружать текст специальными терминами или писать объемный материал. Создайте лаконичное и интересное описание Вашей компании, полностью раскрывающее вид деятельности, достижения и плюсы.
+			.design-lighting-content
+				.container
+					.design-lighting-content__title
+						| Реализованные проекты
+					.design-lighting-content__items
+						.design-lighting-content__item
+							a(href="#")
+								.design-lighting-content__item__img(style="background-image: url('images/bigplaceholder.jpg');")
+								.design-lighting-content__item__text
+									| Пример оформления названия проекта
+						.design-lighting-content__item
+							a(href="#")
+								.design-lighting-content__item__img(style="background-image: url('images/bigplaceholder.jpg');")
+								.design-lighting-content__item__text
+									| Пример оформления названия проекта. Пример в две строки
+						.design-lighting-content__item
+							a(href="#")
+								.design-lighting-content__item__img(style="background-image: url('images/bigplaceholder.jpg');")
+								.design-lighting-content__item__text
+									| Пример оформления названия проекта
+						.design-lighting-content__item.mobile_hidden
+							a(href="#")
+								.design-lighting-content__item__img(style="background-image: url('images/bigplaceholder.jpg');")
+								.design-lighting-content__item__text
+									| Пример оформления названия проекта
+						.design-lighting-content__item.mobile_hidden
+							a(href="#")
+								.design-lighting-content__item__img(style="background-image: url('images/bigplaceholder.jpg');")
+								.design-lighting-content__item__text
+									| Пример оформления названия проекта.
+						.design-lighting-content__item.mobile_hidden
+							a(href="#")
+								.design-lighting-content__item__img(style="background-image: url('images/bigplaceholder.jpg');")
+								.design-lighting-content__item__text
+									| Пример оформления названия проекта
+						.design-lighting-content__item.tab_hidden
+							a(href="#")
+								.design-lighting-content__item__img(style="background-image: url('images/bigplaceholder.jpg');")
+								.design-lighting-content__item__text
+									| Пример оформления названия проекта
+						.design-lighting-content__item.tab_hidden
+							a(href="#")
+								.design-lighting-content__item__img(style="background-image: url('images/bigplaceholder.jpg');")
+								.design-lighting-content__item__text
+									| Пример оформления названия проекта.
+						.design-lighting-content__item.tab_hidden
+							a(href="#")
+								.design-lighting-content__item__img(style="background-image: url('images/bigplaceholder.jpg');")
+								.design-lighting-content__item__text
+									| Пример оформления названия проекта
+					#pagination
+						<ul class="pagination">
+							<li>
+								<a href="">Предыдущая</a>
+							</li>
+							<li>
+								<a href="">1</a>
+							</li>
+							<li class="active">
+								<a href="">2</a>
+							</li>
+							<li>
+								<a href="">3</a>
+							</li>
+							<li class="dots">
+								<a href=""></a>
+							</li>
+							<li>
+								<a href="">10</a>
+							</li>
+							<li>
+								<a href="">Следующая</a>
+							</li>
+						</ul>
+	include pages/footer

@@ -1,0 +1,70 @@
+extends pug/base
+
+append vars
+
+block content
+	include pages/innerheader
+	.content
+		.navigation
+			.container
+				.crumbs
+					<ul class="breadcrumbs">
+						<li>
+							<a href="/">Главная</a>
+						</li>
+						<li>
+							<a href="/">Проектное освещение</a>
+						</li>
+						<li>
+							<span>Название проекта</span>
+						</li>
+					</ul>
+		.page-title
+			.container
+				h3
+					| Название проекта
+		.projects.default-page
+			.container
+				.projects-seo
+						.projects-seo-img(style="background-image: url('images/project-img.jpg');")
+						h5
+							| Заголовок H5.
+						p
+							| Эта страница является самой первой и главной точкой посетителя сайта, и, поэтому важно заполнить ее наиболее качественной и интересной информацией, ведь именно прочитав ее, посетитель решит – оставаться на сайте или искать необходимую информацию в другом месте. Наполняя этот блок информацией, необходимо отталкиваться от потенциальных покупателей, их желаний и потребностей. Расскажите вкратце об истории и деятельности Вашей компании, укажите ваши плюсы и отличия от конкурентов.
+						p
+							| Распишите о разделах сайта, укажите, где и что находиться, что можно найти в фотогалерее, каталоге продукции. Текст необходимо составлять живой, чтобы посетитель читал его быстро и легко, заинтересовываясь с каждой строчкой. Не стоит перегружать текст специальными терминами или писать объемный материал. Создайте лаконичное и интересное описание Вашей компании, полностью раскрывающее вид деятельности, достижения и плюсы. Эта страница является самой первой и главной точкой посетителя сайта, и, поэтому важно заполнить ее наиболее качественной и интересной информацией, ведь именно прочитав ее, посетитель решит – оставаться на сайте или искать необходимую информацию в другом месте. Наполняя этот блок информацией, необходимо отталкиваться от потенциальных покупателей, их желаний и потребностей. Расскажите вкратце об истории и деятельности Вашей компании, укажите ваши плюсы и отличия от конкурентов.
+						p
+							| Эта страница является самой первой и главной точкой посетителя сайта, и, поэтому важно заполнить ее наиболее качественной и интересной информацией, ведь именно прочитав ее, посетитель решит – оставаться на сайте или искать необходимую информацию в другом месте. Наполняя этот блок информацией, необходимо отталкиваться от потенциальных покупателей, их желаний и потребностей. Расскажите вкратце об истории и деятельности Вашей компании, укажите ваши плюсы и отличия от конкурентов.
+			.projects-content
+				.container
+					.projects-content__items
+						.projects-content__item
+							a(href="images/bigplaceholder.jpg" data-fancybox="images")
+								.projects-content__item__img(style="background-image: url('images/bigplaceholder.jpg');")
+						.projects-content__item
+							a(href="images/bigplaceholder.jpg" data-fancybox="images")
+								.projects-content__item__img(style="background-image: url('images/bigplaceholder.jpg');")
+						.projects-content__item
+							a(href="images/bigplaceholder.jpg" data-fancybox="images")
+								.projects-content__item__img(style="background-image: url('images/bigplaceholder.jpg');")
+						.projects-content__item.mobile_hidden
+							a(href="images/bigplaceholder.jpg" data-fancybox="images")
+								.projects-content__item__img(style="background-image: url('images/bigplaceholder.jpg');")
+						.projects-content__item.mobile_hidden
+							a(href="images/bigplaceholder.jpg" data-fancybox="images")
+								.projects-content__item__img(style="background-image: url('images/bigplaceholder.jpg');")
+						.projects-content__item.mobile_hidden
+							a(href="images/bigplaceholder.jpg" data-fancybox="images")
+								.projects-content__item__img(style="background-image: url('images/bigplaceholder.jpg');")
+						.projects-content__item.mobile_hidden
+							a(href="images/bigplaceholder.jpg" data-fancybox="images")
+								.projects-content__item__img(style="background-image: url('images/bigplaceholder.jpg');")
+						.projects-content__item.mobile_hidden
+							a(href="images/bigplaceholder.jpg" data-fancybox="images")
+								.projects-content__item__img(style="background-image: url('images/bigplaceholder.jpg');")
+						.projects-content__item.mobile_hidden
+							a(href="images/bigplaceholder.jpg" data-fancybox="images")
+								.projects-content__item__img(style="background-image: url('images/bigplaceholder.jpg');")
+					.projects-content-btn
+						a(href="#").backBtn Назад
+	include pages/footer

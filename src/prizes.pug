@@ -1,0 +1,41 @@
+extends pug/base
+
+append vars
+
+block content
+    include pages/innerheader
+    .content
+        .navigation
+            .container
+                .crumbs
+                    <ul class="breadcrumbs">
+                        <li>
+                            <a href="/">Главная</a>
+                        </li>
+                        <li>
+                            <span>Новости</span>
+                        </li>
+                    </ul>
+        .page-title
+            .container
+                h3
+                    | Победители
+        .prizes
+            .container
+                .prizes__items
+                    .prizes__item
+                        .prizes__img
+                            img(src="images/house.png", alt="")
+                        .prizes__name
+                            | Квартира в новостройке
+                    .prizes__item
+                        .prizes__img
+                            img(src="images/car.png", alt="")
+                        .prizes__name
+                            | Автомобиль нексия 3
+                    .prizes__item
+                        .prizes__img
+                            img(src="images/appliances.png", alt="")
+                        .prizes__name
+                            | Бытовая техника
+    include pages/footer

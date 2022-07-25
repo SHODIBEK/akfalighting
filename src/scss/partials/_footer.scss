@@ -1,0 +1,28 @@
+footer {
+	.footer {
+		display: flex;
+	    align-items: center;
+		height: 108px;
+		&-copyright {
+			display: inline-block;
+			width: 632px;
+			font-size: 15px;
+			line-height: 22px;
+			color: $grey;
+		}
+		&-korden {
+			display: inline-block;
+			width: calc(100% - 632px);
+			text-decoration: none;
+			img {
+				vertical-align: middle;
+			}
+			span {
+				font-size: 15px;
+				line-height: 22px;
+				padding-left: 20px;
+				color: $grey;
+			}
+		}
+	}
+}

@@ -1,0 +1,72 @@
+extends pug/base
+
+append vars
+
+block content
+	include pages/innerheader
+	.content
+		.navigation
+			.container
+				.crumbs
+					<ul class="breadcrumbs">
+					<li>
+					<a href="/">Главная</a>
+					</li>
+					<li>
+					<span>Каталог продукции</span>
+					</li>
+					</ul>
+		.page-title
+			.container
+				h3
+					| Каталог продукции
+		.catalog
+			.container
+				.catalog-items
+					.catalog-item
+						.catalog-item-large.catalog-item-block
+							.fl-c
+								.catalog-item-block-link
+									.link-active Перейти
+								.catalog-item-block-text
+									p Для дома и офиса
+									span LED лампы, LED панели и подвесные LED светильники
+							.catalog-item-block-img
+								span(style="background-image: url(images/lamp4.png);" role="1")
+						.catalog-item-block
+							.catalog-item-block-link
+								.link-active Перейти
+							.catalog-item-block-text
+								p Промышленное освещение
+								span LED светильники, Led прожекторы и led лампы
+							.catalog-item-block-img
+								span(style="background-image: url(images/lamp6.png);" role="2")
+					.catalog-item
+						.catalog-item-block
+							.catalog-item-block-link
+								.link-active Перейти
+							.catalog-item-block-text
+								p Уличное освещение
+								span LED фонари, led светильники и led прожекторы
+							.catalog-item-block-img
+								span(style="background-image: url(images/lamp5.png);" role='3')
+						.catalog-item-block
+							.catalog-item-block-link
+								.link-active Перейти
+							.catalog-item-block-text
+								p Стабилизаторы напряжения
+								span.h0 &nbsp;
+							.catalog-item-block-img
+								span(style="background-image: url(images/lamp7.png);" role='4')
+						.catalog-item-catalog
+							.catalog-item-catalog__download
+								span.pdf
+								.catalog-item-catalog__download__link
+									a(href="#") Скачать
+									h5 каталог продукции
+				.catalog-seo
+					h5
+						| SEO блок
+					p
+						| Эта страница является самой первой и главной точкой посетителя сайта, и, поэтому важно заполнить ее наиболее качественной и интересной информацией, ведь именно прочитав ее, посетитель решит – оставаться на сайте или искать необходимую информацию в другом месте. Наполняя этот блок информацией, необходимо отталкиваться от потенциальных покупателей, их желаний и потребностей. Расскажите вкратце об истории и деятельности Вашей компании, укажите ваши плюсы и отличия от конкурентов.
+		include pages/footer

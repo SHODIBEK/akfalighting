@@ -1,0 +1,35 @@
+extends pug/base
+
+append vars
+
+block content
+    include pages/innerheader
+    .content
+        .navigation
+            .container
+                .crumbs
+                    <ul class="breadcrumbs">
+                        <li>
+                            <a href="/">Главная</a>
+                        </li>
+                        <li>
+                            <span>Новости</span>
+                        </li>
+                    </ul>
+        .page-title
+            .container
+                h3
+                    | Победители
+        .winner
+            .container
+                .winner__items
+                    - for(var i = 0; i < 20; i++) {
+                        .winner__item
+                            .winner__img
+                                img(src="images/winner-1.jpg", alt="")
+                            h5
+                                | Имя Фамилия
+                            span
+                                | г.Ташкент
+                    - }
+    include pages/footer

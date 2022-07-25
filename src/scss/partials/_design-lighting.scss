@@ -1,0 +1,317 @@
+.design-lighting,.projects {
+	position: relative;
+	&-bg {
+	    position: relative;
+	    width: 100%;
+	    height: 594px;
+	    margin-top: -160px;
+	    z-index: 1;
+        background-repeat: no-repeat;
+		background-position: center;
+	    &__text {
+			position: relative;
+	    	span {
+	    		position: absolute;
+	    		display: none;
+	    		height: 28.99px;
+	    		background-color: #fff;
+	    		border-radius: 5px;
+	    		padding: 2px 10px;
+	    		font-family: $PFDinTextCompPro-Medium;
+	    		font-size: 18px;
+	    		line-height: 25px;
+	    		box-shadow: 0px 10px 20px 0px rgba(127, 126, 126, 0.15);
+	    	}
+	    	span[role='Ландшафтное освещение'] {
+			    top: 393px;
+			    left: 229px;
+			    &:after {
+		    	content: '';
+		    	position: absolute;
+		    	display: inline-block;
+			    top: 23px;
+			    right: -142px;
+			    z-index: -1;
+	    		width: 147px;
+	    		height: 66px;
+	    		background-position: center;
+	    		background-repeat: no-repeat;
+	    		background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTQzIiBoZWlnaHQ9IjYyIiB2aWV3Qm94PSIwIDAgMTQzIDYyIj4KPGltYWdlIHdpZHRoPSIxNDMiIGhlaWdodD0iNjIiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBSThBQUFBK0NBTUFBQUFsSzdoeEFBQUFCR2RCVFVFQUFMR1BDL3hoQlFBQUFDQmpTRkpOQUFCNkpnQUFnSVFBQVBvQUFBQ0E2QUFBZFRBQUFPcGdBQUE2bUFBQUYzQ2N1bEU4QUFBQ0lsQk1WRVh5WENMLy8vK1pPd2p5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENLWk93anlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDS1pPd2p5WENMeVhDS1pPd2p5WENMeVhDS1pPd2oxblEzNnBRdjdxd3I4cnduOHN3ajh0Z2I0dFFYeVhDTHlYQ0xKYUEzNG1CRDh1UVhSaFFieVhDTHlYQ0taT3dqM2poTDh1UVh5WENMeVhDTHhnUlQzc3dYeVhDTHlYQ0taT3dqMWdSZjh0Z2J5WENMMmZSajhzd2p5WENLWk93anlYQ0wxZFJyN3F3cVpPd2p6Y0J6NXBBdVpPd2pwWnh2dmxneVpPd2p4YXh6MmxoQ1pPd2kwU1E3eGF4ejFqQksxVlF1Wk93aVpPd2ptWlJyeWNCdjFkUnIxZVJuMmZSanpnQmZvZWhPWk93aVpPd2laT3dqeVhDTDZuUTc2b2czN3Bndjdxd3I4cnduOHN3ajl0d2I0bEJINW1SRDh5My8rOWVULy9mai85dVQ5MVgzM2l4VDRrUmYrN05ULy8vLys4ZFA4dEEzM2hoWDd3WUw5MUh6eFhDTHhXeUx3V3lIMmdoZis4ZVQxZVJuMmZSanZXeUgrOGViMWRScjZ1SVgwY1J6OTV0WCs2OVAvL1BuKzh1WDd3b1A0anhJQUFBRFJJclhMQUFBQWkzUlNUbE1BQUFBcUYvUjRBZmV5RU4wdzZtSWJ4SjRJQlkvUElsWHk3MDRvMVA2SEF3eWt2bXo0NUQwMzRmcHhGTG1xRGdLQi9kZ3NTT3oxV3g3TGxRZVd5bHhIQWRtQXF4UDdOZ0pyR0FPSTB3US9xT1Q1NUtnL1QvRUlsNWNKSTQ0Rm5aMmZ3ejgvWStrR3FLbmU2ZWF6QjNucDVnaXFxZ2xFUkFxWm1Rc1JtcG9SREExSHJPYjU1cXhIRGc4UXlRYkdRd0FBQUFGaVMwZEV0VE1PV2tzQUFBQUpjRWhaY3dBQUVuUUFBQkowQWQ1bUgzZ0FBQUFIZEVsTlJRZmlDUnNOQWdlNTJzYTBBQUFEYUVsRVFWUm8zdTNaK1Y4TVlSd0g4QzlLU1VSSmtuU29KQ2xKaVJ6clBnZTVyM0ZiNTJKWmxuWE11RmZUZllzSWxkS1c4dy8wUEhQc1BEdlZOTm54OVB6ZzgwdjkwdXo3OWYwK1BmTTgzd1dZQk5RelllUkFST1RrS0tZODBkS1VHTFk4MHRSWWhqelRKRW1LbnM2TUIrSm1JSkEwTTU0VkR5VE13cURFMmF4NEFKTG1JRkR5WEdZOGtESVBnVkxucDdIaWdmUU0zTFBNQ0ZZOEFBdXlFQ2c3aHhrUExNeEZvRVY1TkRaclN4NVluSTk3dHFTQUZROFVMaTFDb0dYRk5uN3l4TEVtOU0rWGx5QlE2UXBtUEZDMkV2ZHNWVGtySGloZmpVRnJ5bGp4QUt3dFJhQ1NkZi9NNHdqTnFCNG9YbzlBUlJzSzdmYzRSb3FwQndvMjRwN2xiN0xaNHpDTG1RZWk4allqVU80V096MzZSMjhsWXhTTjhKeWNiQVRLMm1hZloxaE1LTW5NQTlzemNjOHkwbTN5a0pnZFpFaVNtUWZTZHFZaTBLNFVXenc2UjBad3UvZnNyZGkzL3dBWEpBVkJKczg2bUl4QWg1SnM4Nmdhamp0OHBLcTZwcmF1dnVIb01ZNVRSUlk4Y0R3UjkreEVRdGdlZ3NOeEhIK3lzYW01cGJYdFRYM0RLWjZUUlRySTlHbnhwekhvVEp3ZEhvM0Q4MmZiMzc3cndIbi9vZUVjejVPZ1VUd0E1OUh0VExydzk4ZkdZVGpPaTUwZk81Ujhxci9rTklCR2UyRHNaWFE3azhMUFo1eXVybTZVS3oxZlZFOWIzVlduRHJMa2daaHJ0bmtVVG5kdm44cnBhSzJ0Y0drZ3F4Nkl1aDVwSytmcmpkNSsxZE5TYzlNZENyTGdnWEFtTXRyNndhc0hyeDJueSsyK0ZSaFFQYzNWdDkwcWFDeWVNS0l2Wjd5V1pZN256bURnbTh6NTNsUjExNk9BVUlHVWhwbWRyVzJJb1R3dWw5dmo5ZDRiREF6MC8vajU2M2ZqZmEvWDQzYTVpQUxSOU9EeUlJN3Z3Y1BCUUc5ZlQyZjdvOGMrR1lRTFJOdUQyNFc3NWZVSmd2ams2YlBuTDE2K0VnWEI1NVU3Rm13WVpROHVqeUQ2L2E5eC9INVJVQXMwRGg1ZThTQ09xSEFRU0JUbEFpa0xpTGJIcVhsd2VTb3JLN1VDYVF2b3Y0Y3REMlByaDdYL0wzTC84U3Naei8ySDJKOEYzREkvYnBZd2Z2c3o4ZjZTUWFMT29mLytDbm0vSXhBU29maGtEdlgzdS9IOGcwQkk1TU1halVPY2Z5aDZnaUFzd3ZFRU9iUTlKRWdXeVhIanRXTTRQMVAwRUNBMU9vZStSd2Noa1JxbmM4ajlpNExIQU1JaUxmeVEreWt0RDNGLzV4V1QvSFBJL1oyR3h6RGYwRXp5YjhiNUJqMFBNZi9STXN6OGg0cG5EUE14T2g3cjgwTktIc3Z6VlZvZXEvTm5laDVyODNtYUhndmZYL3dCU3FZNkY2NFprck1BQUFBQVNVVk9SSzVDWUlJPSIvPgo8L3N2Zz4K');
+			    }
+	    	}
+	    	span[role='Фасадное освещение'] {
+				top: 319px;
+				left: 427px;
+			    &:after {
+		    	content: '';
+		    	position: absolute;
+		    	display: inline-block;
+				top: 24px;
+				right: -163px;
+			    z-index: -1;
+	    		width: 167px;
+	    		height: 98px;
+	    		background-position: center;
+	    		background-repeat: no-repeat;
+	    		background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTYzIiBoZWlnaHQ9Ijk0IiB2aWV3Qm94PSIwIDAgMTYzIDk0Ij4KPGltYWdlIHdpZHRoPSIxNjMiIGhlaWdodD0iOTQiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBS01BQUFCZUNBTUFBQUI0dmxSMUFBQUFCR2RCVFVFQUFMR1BDL3hoQlFBQUFDQmpTRkpOQUFCNkpnQUFnSVFBQVBvQUFBQ0E2QUFBZFRBQUFPcGdBQUE2bUFBQUYzQ2N1bEU4QUFBQytsQk1WRVh5WENMLy8vK1pPd2p5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0taT3dqeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENLWk93anlYQ0x5WENMeVhDTHlYQ0taT3dqeVhDS1pPd2oxblEzNnBRdjdxd3I4cnduOHN3ajh0Z2I0dFFYeVhDTHlYQ0xKYUEzNG1CRDh1UVhSaFFieVhDTHlYQ0x5WENLWk93ajNqaEw4dVFYeVhDTHlYQ0x5WENMeGdSVDNzd1h5WENLWk93ajFnUmY4dGdieVhDTHlYQ0x5WENMeFhDTHdXeUh3V3lIdld5SHVXaUh0V2lIMmZSajhzd2p5WENLWk93anlYQ0wxZFJyN3F3cVpPd2p5WENMeVhDTHhYQ0x4WENMd1d5SHdXeUh2V3lIdVd5SHRXaUh6Y0J6NXBBdVpPd2pwWnh2dmxneVpPd2p4YXh6MmxoQ1pPd2kwU1E3eGF4ejFqQksxVlF1Wk93aVpPd2ptWlJyeWNCdjFkUnIxZVJuMmZSanpnQmZvZWhPWk93aVpPd2laT3dqeVhDTDZuUTc2b2czN3Bndjdxd3I4cnduOHN3ajl0d2I0bEJINW1SRDh5My8rOWVULy9mai85dVQ5MVgzM2l4VDRrUmYrN05ULy8vLys4ZFA4dEEzM2hoWDd3WUw5MUh6MmdoZis4ZVR4WENMeFd5THdXeUgxZVJuMmZSanZXeUgrOGViMWRScjZ1SVgwY1J6OTV0WCs2OVAvL1BuKzh1WDd3b1A0anhJQUFBRFIzTzZ0QUFBQTAzUlNUbE1BQUFDblQ3NytpQU1Yd09ROE9PTDZjQlc2cWd5QzF5cEw3Zk5aSWMyVEJRaWJ4eHhnOStwRU1OejhmQUVRc2JSNDNqRkI2V01ieEo2UXp5Slc3MDBvMW9adE9XNjhxSVJNVjVHZHhtSjVzN0o2M1VKaG5KTE9XQ21EcWJ0djR6cHNwb2ZWVGxVampwL0RaT2d5ZHhHdzIwWDJIWm9CQnN0YTdDdjlBZzI1Y2VFRCtBUS9xT1Q1NUtnL0dLUUlsNWNKQk5NbkJaMmRVUEZVUHo4bEJxaXBDb3RtWjJkb2FHbHE2ZWIwQnpUcDVnZ1RtWm1hbXB1Ym5KeXFxZ2xFUkFxWm1Rc1JtcG9SREExSHJPYjU1cXhIRGc4UUlCR3dDQUFBQUFGaVMwZEUvVXNKaytrQUFBQUpjRWhaY3dBQUVuUUFBQkowQWQ1bUgzZ0FBQUFIZEVsTlJRZmlDUnNOQ2l0RDJ5QmZBQUFFNUVsRVFWUm8zdTNaWjN4VFZSakg4YjlpU3hVcVZnb2lWaG9Sc0VJTFZyUXFpcmozVnR3REorNjl4WGxWM0lwZXQzRWdCZFNvMFlLS1JxTnhKTzdZc0ZxbWFCVkZzVWlwODRYbk9iazN1VWxxdVRjNXlYM3c0L09tZmZudGVYS2JYMDdRWlIyd21MWCtmVkJVM0xYRWJkOXFqYkZZMGJwdUExZGpYQzhXaTNYcjdyYXdjMlBwK2dMWll3TzNpWjBhVWJhaFFNWjZsbk0yb3FSWHNVRDIzb2l6RWVpenNVRDIzWVMxRVJXYjByNzdWWEkyd3JNWklmdHZ6dGtJREJnb2tJTzJZRzFFMVpZQ09YaElOV2NqYW9iU3ZvZlZjRGFpZXF2QkFsbTdOV2NqTUh3YmdSeTRMV3NqNnJhamZXL3Y0V3hFNVE2RUhMRWpaeU93VTErQkhMa3pheU5HN1NLUXhic1d1SHlkR1ZIZWhmWmRWTWJaQ096V2c4cDNkOVpHbEhhajh0MkR0UkZsZTlLKzl5cGMrV1poUk1uZXNueEhjVFlDKzR5azh0Mlh0UkVWSTJqZit4V21mTE0wd3JNL0lRK280MndFRHBUbE81eTFFVlcxVkw0SDViOThjekNpNW1EYTl5RjVMOTljaktnK2xNcjNzQ3JPUnVEd1FWUytSN0Eyb3E0LzdYdTBoN01SbFVjUzhxZ0t6a2JnYUZtK2ZWZ2JjVXh2S3Q5ajgxYStLb3dvUDQ3MmZYeSt5bGVKRVRpQnl2ZkVVdFpHbkNUTGR3eHJJOHFLYU44bjU2TjhsUmxSY2dxVjc2bDVLRjkxUnVBMFdiNm5zemJpREZtK1kxV1hyMUlqUEdjUzhpekY1YXZXQ0p4TjVYdU8ydkpWYmNTNXNuelB5NjU4MTNZNldmN1Y1dytqZlYrUVZma1d5b2pxSVZTK0YyWlR2Z1V6QWhkUitWNDhnTFVSbDhqeXZkU2p3SGhaNnFnejR2SitoTHpDYWZsMnl1c0ltb3NSdUpMSzl5cUg1V3RMYUZYbVpzVFZWTDdYOUhKVXZoMEp4MWtuWFptakVkZjJwSDFmNTZSOE00ampNaWNGbWFzUnVKN0s5d1lINVp0S2pKdHV0STZWcWNhSTdsUytONDF4YWt3U0pVeTcrWlpieDk5Mit4MWFncGxBS2pEaVRsbStkOWt0WDZ2UkVHcmEzZmZNbkRWN3p0eW01bnZ2MHpSRHFkS0lDVjJwZk85L3dJblJRdFEwVFg5dzN2d0ZDeGN0L3JxcCtTRmRrOG9rVW9rUmVKaks5NUZISFJwTm9xNC90dVNiYjF0b3Z2dSsrWEZkdHlLVkdmRUVsVy94MkFsMmphbEU3NU5MZjJpSno0OU5UM25Ua0txTWVGcVc3ek1UYmM2ellpWk5xcSt2bnp4NXlwU3BVNTliOXBOaFhEejNlVzhTcWRZSVRCVGwrMExNd2Z3c1p2bnlYMmhhVnhqRWxrVnp4dnRNcEhvalhxeDFaTFFRZjMycGRhVmhYRGo3Wlg4cVVxa1Jyd3dkL2FyTmFXaG9tRFp0K3ZUWFhoZnp4b3daYjdhdE1vd0xacjNsTjVCNU1kcWI1Q05EejR2WDYvUDdBMiszdC8wbWliL1BuL2xPSUk0VUJ4bGZkbWVmZGZJMGhwRWVhbnFrZlQ1L0lCaDh0NzF0MWNvLy92enI3M252QllNQnY4OW5PVWkzalhTTWdoaDYvNFAydHRZVnk1WXUrZkNqa0VUU1FYSXcwcXBwMDhGUU9CejUrSk5QUC92OGl5OGo0WEFvS0xlZFdEWURJeDFqT0JLTmZrVVRqVWJDeGtFeU1lcHhveUJHNGtTQmpFVGtRY1pma0J5TVh0Tkl4OWpZMkdnZXBQbUMvTi80M3pHdUFhL0hOZUc1dHY1L2pNYUgyLzlIeS90TW1OWWRwVVdIZWIzUFdONnZKVEtTSlBKNHYwN3BIb0VVU2pFaFNXVFJQZGFETkpCQ0dTS2hTYlQwbzh2R0JKS1VOSUVFa1lQUmlwUktPWDU2TGFaOW5uSFphRUVha3lUeU1DYVJRbW1NMTV2eCtkb2xZeHFTbE9ib0dmY1ViaG90OXoxNjNDbC9adHozdUdWTXV6Y3puZkszOUhzemQ0MlcrMGR6T3JoL2RNM280QjdYUGFQOSszQVhqYmEvVjNEVGFQZjdHWGVOOXI3bmN0dG80L3ZDZndDOS80UkFYVDI0UWdBQUFBQkpSVTVFcmtKZ2dnPT0iLz4KPC9zdmc+Cg==');
+			    }
+	    	}
+	    	span[role='Уличное освещение'] {
+			    top: 394px;
+			    right: 23px;
+			    &:after {
+		    	content: '';
+		    	position: absolute;
+		    	display: inline-block;
+				top: 24px;
+				right: 135px;
+			    z-index: -1;
+	    		width: 162px;
+	    		height: 95px;
+	    		background-position: center;
+	    		background-repeat: no-repeat;
+	    		background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTYyIiBoZWlnaHQ9Ijk1IiB2aWV3Qm94PSIwIDAgMTYyIDk1Ij4KPGltYWdlIHdpZHRoPSIxNjIiIGhlaWdodD0iOTUiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBS0lBQUFCZkNBTUFBQUJjSU96dUFBQUFCR2RCVFVFQUFMR1BDL3hoQlFBQUFDQmpTRkpOQUFCNkpnQUFnSVFBQVBvQUFBQ0E2QUFBZFRBQUFPcGdBQUE2bUFBQUYzQ2N1bEU4QUFBQ2hWQk1WRVgvLy8veVhDS1pPd2p5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDTHlYQ0x5WENMeVhDS1pPd2laT3dpWk93anlYQ0x5WENLWk93ajFuUTM2cFF2N3F3cjhyd244c3dqOHRnYjR0UVh5WENMSmFBMzRtQkQ4dVFYUmhRYnlYQ0taT3dqM2poTDh1UVh5WENMeVhDTHhnUlQzc3dYeVhDTHlYQ0taT3dqMWdSZjZwZ3Z0V2lIdVdpSHZXeUh3V3lId1d5SHhYQ0x5WENMeVhDTHlYQ0wyZlJqeVhDS1pPd2p5WENLWk93ajFkUnI2cGd6dFdpSHVXeUh2V3lId1d5SHdXeUh4WENMeFhDTHlYQ0x5WENMeVhDTHpjQno1cEF1Wk93anBaeHZ2bGd5Wk93anhheHoybGhDWk93aTBTUTd4YXh6MWpCSzFWUXVaT3dpWk93am1aUnJ5Y0J2MWRScjFlUm4yZlJqemdCZm9laE9aT3dpWk93aVpPd2p5WENMNm5RNzZvZzM3cGd2N3F3cjhyd244c3dqOXR3YjRsQkg1bVJEOHkzLys5ZVQvL2ZqLzl1VDkxWDMzaXhUNGtSZis3TlQvLy8vKzhkUDh0QTMzaGhYN3dZTDkxSHoyZ2hmKzhlVDdxZ3Z3V3lIeFd5THhYQ0wxZVJuMmZSajhyUXIrOGViMWRScjZ1SVgwY1J6OTV0WCs2OVAvL1BuKzh1WDd3b1A0anhJQUFBQVJxZmhIQUFBQXEzUlNUbE1BQUFCUHFBT0kvcjRYUE9UQWNmcmpPQTJxdXhVcjE0TmE4KzVMQnBQTklSM0htd2hFNnZkZ0FYejgzREFSdExFUU10NTRaRUdmeFJzano1QUZUdTlXaDlZb3B3dzZiVytwdkNtRldFeVNuVU5pZXJOQ3ZZWjVIQUVDQTJ6NUJEK281UG5rcUQrbENKZVhDZFFGbloxVjhqOC9qaVVHcU14cWFXaG9aMmRtakFycDlBYzBDT24xbkp5Ym01cWFtWm1jRTZxcUNVUkVDcG1aQ3hHYW1oRU1EVWVzNXZubXJFY09EeENKVHpTekFBQUFBV0pMUjBUVzU3VnFxUUFBQUFsd1NGbHpBQUFTZEFBQUVuUUIzbVlmZUFBQUFBZDBTVTFGQitJSkd3MFJGRnlMeHZnQUFBVDhTVVJCVkdqZTdkbjVleE5GR0Fmd0JBd3RJRkFnM0VlQmNBUW90RlNPQWdHa2hFTk9BYTk2ckNlZTYyMVVhQVUxUmxTZ1h0Rm9WQkpVSURSY0xhZG9GVVhCQXFXZS80L3p2cnViVE5KTnU1UGsyWG4xOGYybDdlNU04dW04dTludk0zRTRjcGFUUlBXOHprR2I2T3BWVWtxYjJMczBtYVJON05NM21VeGVUNW5Zcno4VERpaWpTeHc0aUFHVGc5MU9zc1FoUXhtd1pKakxTWlk0ZkFRVGpod0Z2OUlramg0RFRSNWI3aVJMSERjZWhCTThUckxFaVpNWWNQSVU0MDk2Uk8vVWFVdzR2U0oxZ0J4eHhreG9jbVZWK2dnMTRxeHFCcHgyZzVjN1JJdzRleklUVHBxVGNZd1UwVE1YbWp5dkp2TW9KZUw4QlNCYzZNczZUSWk0YURFRGpsalM2VGdab3V2R0VpWmNXdHY1REJXaXV4U2F2TXh2Y29vSWNUbUUxLzRyVE0vUklLNkU4TnEzelB3a0JhSi9GVFQ1Sm5lTzB3U0lxekc4cm5IbE9pK2Z1QmJDNitKMXVRZklKdnJXUTVNWGxIY3hSREt4QnNQckJrOVhZK1FTYjhid3VySHJRVEtKM2swUVhxc3J1aGtta1ZpMUdacTh1YXE3Y2ZLSUZSaGVOM203SFNpTnVCSEQ2eTBXUmtvaWVqWkFrOGZYV0JrcmgxaU80WFc5ejlKZ0tjUjFHRjdYV2h3dGdlaGFBK0YxNkdxcjQrMG51bStGSnEveVc1NWdPN0VNdyt0S2dSbDJFMWRnZUYwdU1zVmVvbjhaTkxuVUxUVEpWbUx0VWdpdnQ3bkVadGxKWElMaGRaSG9OUHVJdm9VWVh1Y0xUN1NOV0RNUGhITTk0alB0SXM3QjhEbzduNm4yRUwyM1kzaWRsZGRrUncvaEVuK1Rxa3BvOHN3WitmMS9kaEFycGtONG5kcDllSlZHbklMaGRXS2VRQnVJbmdrWVh1L0lXOWlKV0pkWkJSUEx4NEp3ek9qOGhUeXhMbGNWUUJ3MUVzTHI4QUtBSExHdXE4cVQ2QnFHNFhWSVFVS0RtTmJjeVpjcDB2SnJ1d2REa3djTkxFeW9FMDE5bVVweFl0a0FDSy85Q2dUcVJONTNGMSs4VXBSNDl6MFFYdnNVTEVSaVdvZ3U1ZDc3N24vZ3dZZTJLQ2xscHRIUzYvb2Z4dkRhdTNCaG1xZ0RGZVdSUnc4Zk9YcnNlSFBMWTQ4cmlvNFVKdFkrQWVHMWwyQjR6VW5raElxaXFFK2VPSG5xOUptejN6UzNQS1VxaU13eVdualZwNStCOE5xekdNQVUwUkNxNnJQbnZ2MnVGZXI3SDFxZVUxWGVhSlhvZXg3RDZ3dkZFVEppcGpEdzR2a2ZXN1g2cWZtbGw3ZHUzYmF0dnI2K29hSGhGVmJicmRVT0RLK3ZGa21ZSWhyQ3dHc1hmdGFKWjQvL2NwSFZwVXUvUWlXdDErc3N2RzR2RnBBbmFzSmcyMlZkMkhybTJKV0xhYU1Rc2ZxTjRnazFJaWNNdmRsMlZTZWVQcnJ6cmJmZlliVnIxKzdkZS9ZME5qYSthNjNlcTN5L2lFS09xQWxESDdSZjA0bW5qbndZQ2dVREFYYlB3QjJUdWwrSytmYVdpSHFmMlNLaU1QeFJSL3R2S1B6OTVPR1B3NXFSM2RiY1BlMnd1N2hGREFaRDRVamtrNDcyYTFmLytQT3Z2MDk4R29tRVE4Rmc5akxLSThJaU1tSDBzODg3MnRzdVh6aC83b3U5VVRUQ01oSWdRcCtoelpGb0xCYmY5K1ZYWCs4L2NEQWVpMFVqMk9wVXArVVRZUkZqOFVUaUVGUWlFWS9weTBpRHFHcEVKb3hyUW1hTXgzRVp0WXVSQURGZ0VHRVJtNXFhakdVMExzYi9pZjhSSXYxcjhWOXdSL09maXdtdGlIMHVjaytYR1BRNkFWMk9rWHE2Y005b05NYlRRaExQNkl5a3c0d015U3FLUWdwSkp6c3ZNaU5EUmdGb0NMUHlvanhpeWdoSXFIQktTSURJR3hHSkZZTHJrQmRLSjNKR3ZkSkNFc1Mwa1NIMUNuQkNxY1FzSXlDTlVrMTNJeVFSdVQwZFZXUGlUOU05SFFuRXJKMHhnNG0vbWUyTVNTTnkrNHRHNWRoZmxFRVUzS1dWUWhUYjY1WkRGUHJHUUJKUjVIc1hhVVRyMzE1SkpKbzVlNWlVM2NKL0FNdG5WcFc5VTl4dkFBQUFBRWxGVGtTdVFtQ0MiLz4KPC9zdmc+Cg==');
+			    }
+	    	}
+	    }
+	}
+	&-seo {
+	    padding-top: 45px;
+        padding-bottom: 27px;
+		&__tittle {
+			font-family: $PFDinTextCompPro-Medium;
+			font-size: 18px;
+			line-height: 25px;
+		    padding-bottom: 18px;
+		}
+		&__subtitle {
+			p {
+				font-size: 17px;
+				line-height: 24px;
+				color: $grey;
+				padding-bottom: 17px;
+				margin: 0;
+			}
+		}
+	}
+	&-content {
+		position: relative;
+		background-repeat: repeat;
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABRCAYAAABFTSEIAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxMzggNzkuMTU5ODI0LCAyMDE2LzA5LzE0LTAxOjA5OjAxICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+IEmuOgAAASRJREFUeJzt3TGKwgAURdFvEMSFZQnZY/bgmlJbOs1Y2AyDtxDhnPLZyCM/r8xp3/fH/FrXdfif2+02MzPnmZlt215+vN/vc71eZX9kz86WIVmcbeMJjE7HcTwul8un/8fXOs/Mx1/I35w54UiBkQIjIxIZkZg54UiBkQIjIxIZkZg54UiBkQIjIxIZkZg54UiBkQIjIxIZkZg54UiBkQIjIxIZkZg54UiBkQIjIxIZkZg54UiBkQIjIxIZkZg54UiBkQIjIxIZkZg54UiBkQIjIxIZkZg54UiBkQIjIxIZkZg54UiBkQIjIxIZkZg54UiBkQIjIxIZkZg54UiBkQIjIxIZkZg54UiBkQIjIxIZkZg54Wh5fpWA93gCo5Pvibznebk/1owdNQbLAlIAAAAASUVORK5CYII=');
+		padding-top: 44px;
+		padding-bottom: 99px;
+		-webkit-box-shadow: inset 0px 7px 20px -8px rgba(0,0,0,0.75);
+		-moz-box-shadow: inset 0px 7px 20px -8px rgba(0,0,0,0.75);
+		box-shadow: inset 0px 7px 20px -8px rgba(0,0,0,0.75);
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 190px;
+			z-index: 0;
+			background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+			background-image: -moz- oldrepeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+			background-image: -o-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+			background-image: repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+			-moz-background-size: 3px 3px;
+			background-size: 4px 4px;
+		}
+		&__title {
+			font-family: $PFDinTextCompPro-Medium;
+			font-size: 30px;
+			line-height: 33px;
+		    padding-bottom: 44px;
+		}
+		&__items {
+			display: flex;
+		    justify-content: space-between;
+		    flex-wrap: wrap;
+		}
+		&__item {
+			position: relative;
+			width: 306px;
+			z-index: 1;
+			margin-bottom: 44px;
+			&:hover {
+				a {
+					color: $color-orange;
+					transition: all .3s ease-in-out;
+				}
+			}
+			a {
+				display: block;
+				text-decoration: none;
+				color: $color-black;
+				transition: all .3s ease-in-out;
+			}
+			&__img {
+				width: 100%;
+				height: 226px;
+				border-radius: 5px;
+				border: 1px solid #ebebeb;
+				margin-bottom: 15px;
+				box-shadow: 0px 10px 20px 0px rgba(127, 126, 126, 0.15);
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+			&__text {
+				font-family: $PFDinTextCompPro-Medium;
+				font-size: 18px;
+				line-height: 25px;
+			}
+		}
+	}
+}
+@media (max-width: 960px) {
+	.header-bg-hidden {
+		.inner-header {
+			background-image: none;
+			background-color: $color-orange;
+		}
+		.inner-header .header-content:before {
+			display: none;
+		}
+		.design-lighting-bg__text span {
+			height: 20.31px;
+			font-size: 12px;
+			line-height: 15px;
+		}
+		.design-lighting-bg {
+			height: 414px;
+			margin-top: -151px;
+			background-size: cover;
+		}
+		.design-lighting-bg__text span[role='Ландшафтное освещение'] {
+			top: 273px;
+			left: 208px;
+			&:after {
+				top: 16px;
+				right: -113px;
+				width: 127px;
+				height: 45px;
+				background-size: contain;
+			}
+		}
+		.design-lighting-bg__text span[role='Фасадное освещение'] {
+			top: 222px;
+			left: 346px;
+			&:after {
+				top: 17px;
+				right: -131px;
+				width: 155px;
+				height: 64px;
+				background-size: contain;
+			}
+		}
+		.design-lighting-bg__text span[role='Уличное освещение'] {
+			top: 272px;
+			right: 62px;
+			&:after {
+				top: 16px;
+				right: 97px;
+				width: 115px;
+				height: 70px;
+				background-size: contain;
+			}
+		}
+		.design-lighting-content__item {
+			width: 242px;
+			margin-bottom: 32px;
+			&:hover {
+				a {
+					color: #000;
+				}
+			}
+		}
+		.design-lighting-content__item__img {
+			height: 182px;
+		}
+		.design-lighting-content #pagination{
+			padding-top: 35px;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.header-bg-hidden .design-lighting-bg {
+		height: 246px;
+		margin-top: -115px;
+		background-size: cover;
+		background-position: center;
+		overflow: hidden;
+	}
+	.header-bg-hidden .design-lighting-bg__text span {
+		font-size: 7.45px;
+		height: 12px;
+		line-height: 11px;
+		padding: 0 5px;
+	}
+	.header-bg-hidden .design-lighting-bg__text span[role='Ландшафтное освещение'] {
+		text-align: center;
+		top: 161px;
+		left: 55px;
+		height: 12px;
+		&:after {
+			width: 60px;
+			top: 10px;
+			right: -57px;
+			height: 27px;
+			background-size: cover;
+		}
+	}
+	.header-bg-hidden .design-lighting-bg__text span[role='Фасадное освещение'] {
+		top: 131px;
+		left: 136px;
+		&:after {
+			top: 11px;
+			right: -69px;
+			width: 75px;
+			height: 35px;
+			background-size: cover;
+		}
+	}
+	.header-bg-hidden .design-lighting-bg__text span[role='Уличное освещение'] {
+		top: 170px;
+		right: 0;
+		&:after {
+			top: 19px;
+			right: 38px;
+			width: 55px;
+			height: 17px;
+			transform: rotate(-22deg);
+			background-size: cover;
+		}
+	}
+	.design-lighting-seo, .projects-seo {
+		padding-top: 44px;
+		padding-bottom: 30px;
+	}
+	.design-lighting-seo__tittle, .projects-seo__tittle {
+		font-size: 16px;
+		line-height: 21px;
+		padding-bottom: 21px;
+	}
+	.design-lighting-seo__subtitle p, .projects-seo__subtitle p {
+		line-height: 23px;
+	}
+	.design-lighting-content__title, .projects-content__title {
+		font-size: 26px;
+		line-height: 24.85px;
+		padding-bottom: 47px;
+	}
+	.header-bg-hidden .design-lighting-content__item {
+		width: 100%;
+		margin-bottom: 44px;
+	}
+	.header-bg-hidden .design-lighting-content__item__img {
+		height: 227px;
+	}
+	.design-lighting-content__item__text, .projects-content__item__text {
+		font-size: 16px;
+		line-height: 21px;
+	}
+	.header-bg-hidden .design-lighting-content #pagination {
+		padding-top: 0;
+	}
+}

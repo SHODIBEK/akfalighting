@@ -1,0 +1,40 @@
+.quality-led {
+    background-image: url(../images/sprites/lamp_min.png);
+    background-position: 0 0;
+    background-repeat: no-repeat !important;
+    background-size: 100% auto !important;
+    bottom: 0;
+    height: 50vw;
+    left: 0;
+    margin: auto;
+    max-height: 260px;
+    max-width: 600px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 97vw;
+}
+
+#lamp-bg.forward {
+	animation: sprite-open 1.2s steps(75) forwards;
+}
+#lamp-bg.backward {
+	animation: sprite-close 1.2s steps(75) backwards;
+}
+
+@keyframes sprite-open {
+    from {
+        background-position: 0 0%;
+    }
+    to {
+        background-position: 0 100%;
+    }
+}
+@keyframes sprite-close {
+    from {
+        background-position: 0 100%;
+    }
+    to {
+        background-position: 0 0%;
+    }
+}

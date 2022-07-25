@@ -1,0 +1,130 @@
+extends pug/base
+
+append vars
+    - title = 'Корзина'
+    - meta.description = 'Описание страницы'
+    - meta.viewport = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
+    - link.icon = './favicon.ico'
+    - meta.formatDetection = 'telephone=no'
+    - meta.themeColor = '#FFCC00'
+    - defaultLink = 'javascript:void(0);'
+    - body.classList = ['basket-page']
+
+block content
+    include pages/innerheader
+    .content
+        .navigation
+            .container
+                .crumbs
+                    <ul class="breadcrumbs">
+                        <li>
+                            <a href="/">Главная</a>
+                        </li>
+                        <li>
+                            <span>Корзина</span>
+                        </li>
+                    </ul>
+        .page-title
+            .container
+                h3
+                    | Корзина
+        .basket
+            .container
+                .basket-wrapper
+                    form(action="/" method="POST").basket-form.step-1
+                        ul#progressbar
+                            li.active
+                                | 1
+                            li
+                                | 2
+                            li
+                                | 3
+                        fieldset.step-one
+                            <table>
+                                <tr class="basket-header">
+                                    <th>Наименования</th>
+                                    <th>Колличество</th>
+                                    <th>Сумма</th>
+                                    <th>Удалить</th>
+                                </tr>
+                                <tr class="basket-body">
+                                    <td class="basket-img">
+                                        img(src="images/product.jpg", alt="")
+                                    </td>
+                                    <td class="basket-name"><p class="hidden-lg">Наименования</p>AK-UFO 20W</td>
+                                    <td class="basket-counter">
+                                        <p class="hidden-lg">Колличество</p>
+                                        .counter
+                                            button(type="button").minus
+                                            input(type="number" value="15").item-count
+                                            button(type="button").plus
+                                    </td>
+                                    <td class="basket-price"><p class="hidden-lg">Сумма</p>20 000 сум</td>
+                                    <td class="basket-btn"><p class="hidden-lg">Удалить</p><button type="button" class="remove"></td>
+                                </tr>
+                                <tr class="basket-body">
+                                    <td class="basket-img">
+                                        img(src="images/product.jpg", alt="")
+                                    </td>
+                                    <td class="basket-name"><p class="hidden-lg">Наименования</p>AK-UFO 20W</td>
+                                    <td class="basket-counter">
+                                        <p class="hidden-lg">Колличество</p>
+                                        .counter
+                                            button(type="button").minus
+                                            input(type="number" value="15").item-count
+                                            button(type="button").plus
+                                    </td>
+                                    <td class="basket-price"><p class="hidden-lg">Сумма</p>20 000 сум</td>
+                                    <td class="basket-btn"><p class="hidden-lg">Удалить</p><button type="button" class="remove"></td>
+                                </tr>
+                            </table>
+                            .fieldset-txt
+                                p
+                                    | Колличество товаров: <span>30</span>
+                                p
+                                    | Всего к оплате: <span>600 000 сум</span>
+                        fieldset.step-two
+                            h5
+                                | Информация о покупателе
+                            .input-groups
+                                .input-group
+                                    input(type="text" name="name" placeholder="ФИО")
+                                .input-group
+                                    input(type="tel" name="number" placeholder="Номер телефна")
+                                .input-group
+                                    input(type="text" name="address" placeholder="Адрес")
+                                .input-group
+                                    input(type="email" name="email" placeholder="Электронная почта")
+                            hr(style="width: 100%;")
+                            h5
+                                | Информация о покупателе
+                            p
+                                | Товарищи! укрепление и развитие структуры в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки систем массового участия. С другой стороны сложившаяся структура организации позволяет оценить значение направлений прогрессивного развития.
+                            label
+                                | Примечание для доставки
+                            textarea(name="text" placeholder="Напишите здесь примечания для доставки")
+                        fieldset.step-three
+                            h5
+                                | Платежная информация
+                            p
+                                | Способ оплаты:
+                            <p>
+                                <input type="radio" id="cash" name="radio-group" checked>
+                                <label for="cash">Наличные</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="terminal" name="radio-group">
+                                <label for="terminal">Терминал</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="payme" name="radio-group">
+                                <label for="payme">Payme</label>
+                            </p>
+                        .fieldset-btn
+                            button(type="button").prev
+                                | Назад
+                            button(type="button").next
+                                | Далее
+                            button(type="submit").submit
+                                | Оформить заказ
+    include pages/footer
